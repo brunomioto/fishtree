@@ -44,6 +44,7 @@ fishtree_phylogeny <- function(species, rank, type = c("chronogram", "phylogram"
 
   type <- rlang::arg_match(type)
   fullurl <- switch(type,
+                    #chronogram = "https://fishtreeoflife.org/downloads/actinopt_12k_treePL.tre.xz",
                     chronogram = "https://fishtreeoflife.org/downloads/actinopt_full.trees.xz",
                     chronogram_mrca = "https://fishtreeoflife.org/downloads/actinopt_12k_treePL.tre.xz",
                     phylogram = "https://fishtreeoflife.org/downloads/actinopt_12k_raxml.tre.xz",
